@@ -20,7 +20,7 @@ const Header = () => {
                         height="30"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"
-                    />Halal Food</Navbar.Brand>
+                    />Halal HomeMade Dishes</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
