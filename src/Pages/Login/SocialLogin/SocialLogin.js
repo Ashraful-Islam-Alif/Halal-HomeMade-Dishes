@@ -30,15 +30,11 @@ const SocialLogin = () => {
             </div>
             {errorElement}
             <div >
-                <button onClick={() => signInWithGoogle()} className='btn btn-primary w-50 d-block mx-auto m-3'>
+                <button onClick={() => signInWithGoogle()} className='btn btn-secondary opacity-75 w-50 d-block mx-auto m-3'>
                     <img style={{ width: 30 }} src={google} alt="" />
                     <span className='p-2'>Google Sign In</span>
                 </button>
-                <button className='btn btn-primary w-50 d-block mx-auto m-3'>
-                    <img style={{ width: 30 }} src={facebook} alt="" />
-                    <span className='p-2'>Facebook Sign In</span>
-                </button>
-                <button onClick={() => signInWithGithub()} className='btn btn-primary w-50 d-block mx-auto m-3'>
+                <button onClick={() => signInWithGithub()} className='btn btn-secondary opacity-75 w-50 d-block mx-auto m-3'>
                     <img style={{ width: 30 }} src={github} alt="" />
                     <span className='p-2'>GitHub Sign In</span>
                 </button>

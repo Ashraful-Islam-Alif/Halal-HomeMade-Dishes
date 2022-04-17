@@ -57,7 +57,7 @@ const Login = () => {
     return (
         <div className='container'>
             <Form onSubmit={handleSubmit}>
-                <h2 className='text-center text-primary'>Please Login</h2>
+                <h2 className='text-center text-info'>Please Login</h2>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -68,13 +68,13 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary" type="submit" className='w-50 mx-auto d-block'>
+                <Button type="submit" className='w-50 mx-auto d-block btn btn-success'>
                     Login
                 </Button>
             </Form>
             {errorElement}
-            <p>Forget Password? <button className='btn btn-link text-primary text-decoration-none' onClick={resetPassword}>Reset</button></p>
-            <p>New to Genius Car? <Link to='/register' className='text-primary text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+            <p>Forget Password? <button className='btn btn-link text-info text-decoration-none' onClick={resetPassword}>Reset</button></p>
+            <p>New to Halal HomeMade? <Link to='/register' className='text-info text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
             <SocialLogin></SocialLogin>
             <ToastContainer />
         </div>

@@ -41,7 +41,7 @@ const Register = () => {
     return (
         <div className='container'>
             <Form onSubmit={handleSubmit}>
-                <h2 className='text-center text-primary'>Please Register</h2>
+                <h2 className='text-center text-info'>Please Register</h2>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Your Name</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Enter Your Name" required />
@@ -50,9 +50,7 @@ const Register = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
+
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -60,13 +58,13 @@ const Register = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                <label htmlFor="terms" className={agree ? "text-primary ps-2" : "ps-2 text-danger"}>Accept Genius Car Terms and Conditions</label>
+                <label htmlFor="terms" className={agree ? "text-info ps-2" : "ps-2 text-danger mb-3"}>Accept Halal HomeMade Terms and Conditions</label>
                 <br />
-                <Button disabled={!agree} variant="primary" type="submit" className='w-50 mx-auto d-block'>
+                <Button disabled={!agree} variant="success" type="submit" className='w-50 mx-auto d-block mb-3'>
                     Register
                 </Button>
             </Form>
-            <p>Already have an account? <Link to='/login' className='text-primary text-decoration-none ' onClick={navigateLogin}>Please Login</Link></p>
+            <p>Already have an account? <Link to='/login' className='text-info text-decoration-none ' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div >
     );

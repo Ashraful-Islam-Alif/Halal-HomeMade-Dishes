@@ -15,7 +15,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect sticky='top' expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home"><img
+                    <Navbar.Brand as={Link} to="/"><img
                         src={logo}
                         height="30"
                         className="d-inline-block align-top"
@@ -25,11 +25,11 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                            <Nav.Link href='home#items'>Items</Nav.Link>
 
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                             {user ?
                                 <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
                                 :
