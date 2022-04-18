@@ -1,21 +1,20 @@
 import React from 'react';
-import items1 from '../../../images/items/items1.jpg'
-import items2 from '../../../images/items/items2.jpg'
-import items3 from '../../../images/items/items3.jpg'
-import items4 from '../../../images/items/items4.jpg'
+import services1 from '../../../images/items/service1.jpg'
+import service2 from '../../../images/items/service2.jpg'
+import service3 from '../../../images/items/service3.jpg'
+
 import Items from './Items/Items';
 
 const items = [
-    { id: 1, price: "150tk", img: items1, name: "Beef Tehari", details: "Tehari (তেহারি) is a rice dish that is almost always made with beef in Bangladesh. With mustard oil, authentic old Dhaka tehari is prepared. In the Indian subcontinent (India, Pakistan, and Bangladesh) cuisine, beef tehari (বিফ তেহারি) is extremely popular." },
-    { id: 2, price: "130tk", img: items2, name: "Chicken Khichuri", details: "Spicy rice dish cooked lentil served with chicken. Chicken Khichuri. Pearls of rice. Gorgeous red lentils. Succulent cuts of chicken. An ensemble of spices. Dollops of ghee. All cooked to luxuriant perfection." },
-    { id: 3, price: "160tk", img: items3, name: "Morog Polao", details: "Morog Pulao is a delicious food for any special day." },
-    { id: 4, price: "300tk", img: items4, name: "Mutton Paya", details: "Mutton paya goat is basically stew or broth made with goat trotters when these trotters are cooked in water with some ginger, garlic and spices like red chili, turmeric powder, coriander powder and salt overnight so that the juice from the goat legs or trotters is extracted fully and mixed with the gravy ." }
+    { id: 1, price: "(150-400)tk", img: services1, name: "HomeMade Meals", details: "Looking for food to make for dinner tonight? These recipes are comfort food at its best. From homemade chicken potpie to mom's meatloaf, make these comforting dinner foods when you need a home-cooked meal." },
+    { id: 2, price: "(100-200)tk", img: service2, name: "HomeMade Drinks", details: "If you’re looking for colorful, fresh, fruity drinks that are refreshing and perfect for summer, here are four homemade drink ideas. I wanted to create a series of non-alcoholic drinks that were impressively beautiful, fresh, and delicious." },
+    { id: 3, price: "(500-2000)tk", img: service3, name: "HomeMade Cake", details: "If you're looking for a birthday treat, or pastries for a coffee morning, then there's a wide choice, and probably 'a bakery near me' which will serve exactly what you want. Delicious breads, wonderful cakes, and delightful cookies are what make the day sweet and fun. It's also becoming increasingly popular to order birthday cake online as it can be personalised and made to order for whoever you want, far more easily than going into a shop which takes so much valuable time. There's also a range of cake and bakery goods from all over the world to enjoy in Dhaka, so read on to find out more." },
 ]
 const Services = () => {
 
     return (
         <div className='container '>
-            <h1 className='text-center m-5'>Items</h1>
+            <h1 className='text-center m-5'>Services</h1>
 
             <div className="row ">
                 {
