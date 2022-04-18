@@ -14,10 +14,10 @@ const items = [
 const Services = () => {
 
     return (
-        <div className='container'>
+        <div className='container '>
             <h1 className='text-center m-5'>Items</h1>
 
-            <div className="row">
+            <div className="row ">
                 {
                     items.map(item => <Items
                         key={item.id}
