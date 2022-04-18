@@ -13,7 +13,7 @@ const items = [
 const Services = () => {
 
     return (
-        <div className='container '>
+        <div className='container mb-5'>
             <h1 className='text-center m-5'>Services</h1>
 
             <div className="row ">
