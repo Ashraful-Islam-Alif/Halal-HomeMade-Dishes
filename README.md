@@ -6,5 +6,5 @@
 - This project is mainly focused on authentication
 - I used useRef in email and password
 - Disable button when user do not agree terms and conditions
-- email verification and resent password email send is use
-- toaster is used
+- email verification and reset password by sending email 
+- toaster is used 
